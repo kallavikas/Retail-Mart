@@ -3,6 +3,7 @@ package com.sampleProject.RetailMart.configuration;
 
 import java.util.Collections;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -36,6 +37,12 @@ public class RetailMartConfig {
 	      "API license URL", 
 	      Collections.emptyList());
 	    
+	}
+	
+	@Bean
+	public ModelMapper modelMapper()
+	{
+		return new ModelMapper();
 	}
 
 
