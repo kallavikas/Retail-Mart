@@ -1,8 +1,9 @@
-package com.sampleProject.RetailMart.configuration;
+package com.sampleproject.retailmart.configuration;
 
 
 import java.util.Collections;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -20,7 +21,7 @@ public class RetailMartConfig {
     public Docket api() { 
         return new Docket(DocumentationType.SWAGGER_2)  
           .select()                                  
-          .apis(RequestHandlerSelectors.basePackage("com.sampleProject.RetailMart"))              
+          .apis(RequestHandlerSelectors.basePackage("com.sampleproject.retailmart"))              
           .paths(PathSelectors.any()) 
           .build().apiInfo(apiInfo());                                           
     }
@@ -36,6 +37,12 @@ public class RetailMartConfig {
 	      "API license URL", 
 	      Collections.emptyList());
 	    
+	}
+	
+	@Bean
+	public ModelMapper modelMapper()
+	{
+		return new ModelMapper();
 	}
 
 
