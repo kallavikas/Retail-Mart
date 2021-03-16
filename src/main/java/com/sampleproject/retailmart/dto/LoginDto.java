@@ -1,4 +1,4 @@
-package com.sampleProject.RetailMart.dto;
+package com.sampleproject.retailmart.dto;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;

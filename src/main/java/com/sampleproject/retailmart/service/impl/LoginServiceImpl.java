@@ -1,14 +1,14 @@
-package com.sampleProject.RetailMart.service.impl;
+package com.sampleproject.retailmart.service.impl;
 
 import java.util.Optional;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
-import com.sampleProject.RetailMart.dto.LoginDto;
-import com.sampleProject.RetailMart.model.Login;
-import com.sampleProject.RetailMart.repository.LoginRepository;
-import com.sampleProject.RetailMart.service.LoginService;
+import com.sampleproject.retailmart.dto.LoginDto;
+import com.sampleproject.retailmart.entity.Login;
+import com.sampleproject.retailmart.repository.LoginRepository;
+import com.sampleproject.retailmart.service.LoginService;
 
 import lombok.RequiredArgsConstructor;
 

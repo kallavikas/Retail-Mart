@@ -1,12 +1,12 @@
-package com.sampleProject.RetailMart.controller;
+package com.sampleproject.retailmart.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sampleProject.RetailMart.dto.LoginDto;
-import com.sampleProject.RetailMart.model.Login;
-import com.sampleProject.RetailMart.service.LoginService;
+import com.sampleproject.retailmart.dto.LoginDto;
+import com.sampleproject.retailmart.entity.Login;
+import com.sampleproject.retailmart.service.LoginService;
 
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import lombok.RequiredArgsConstructor;

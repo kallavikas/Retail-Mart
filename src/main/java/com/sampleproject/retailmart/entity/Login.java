@@ -1,4 +1,4 @@
-package com.sampleProject.RetailMart.model;
+package com.sampleproject.retailmart.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -21,8 +21,10 @@ public class Login {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    
     @Column(unique = true)
 	private String userName;
+    
     @Column(nullable = false,length = 20)
 	private String password;
 	private Long mobileNo;
