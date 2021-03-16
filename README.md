@@ -30,5 +30,6 @@ Retail web Application
 17. ssl configuration
 18. jmeter scripts
 19. add spring profile 
+20. add git ignore file
 
 
