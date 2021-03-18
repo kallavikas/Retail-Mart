@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: retail-mart
   jpa:
     show-sql: true
     properties:
@@ -6,7 +8,11 @@ spring:
         format_sql: true
     hibernate:
       ddl-auto: create-drop
-    database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.H2Dialect   
+---
+#Local Profiles#
+spring:
+  profiles: local
   datasource:
     url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;
     username: sa
@@ -14,8 +20,17 @@ spring:
     driver-class-name: org.h2.Driver
   h2:
     console:
-      path: /h2
+      path: /h2   
+---
+#Dev Profiles#
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:h2:mem:devdb;DB_CLOSE_DELAY=-1;
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
       
     
       
-      
+  
