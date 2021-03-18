@@ -8,7 +8,7 @@ spring:
         format_sql: true
     hibernate:
       ddl-auto: create-drop
-    database-platform: org.hibernate.dialect.H2Dialect   
+    database-platform: org.hibernate.dialect.H2Dialect  
 ---
 #Local Profiles#
 spring:
