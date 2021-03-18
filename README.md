@@ -7,6 +7,8 @@ Retail web Application
 2. Entity added
 3. package structure added
 4. lombok integration
+9. Add jenkins stage
+10. Docker file
 
 #Pending Task
 
@@ -19,8 +21,6 @@ Retail web Application
 6. Add compleatable future,@async annotation
 7. Add Trace id ,span id implementation
 8. Implement work flow activi 
-9. Add jenkins stage
-10. Docker file
 11. Jdbc template, Named Jdbc (return single value, List of object(string,customObjects), JPA integration implementation (embedded key)
 12. Add Junit testcases
 13. Integration test cases
