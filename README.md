@@ -32,4 +32,19 @@ Retail web Application
 3. Add kafka integration
 8. Implement work flow activi 
 
+#To be Implemented
+
+1. https://reflectoring.io/spring-boot-cache/
+2. https://reflectoring.io/spring-boot-hazelcast/
+3. https://reflectoring.io/database-migration-spring-boot-liquibase/
+9. https://reflectoring.io/spring-boot-configuration-properties/
+9. https://reflectoring.io/spring-boot-conditionals/
+9. https://reflectoring.io/spring-boot-test/
+9. https://reflectoring.io/bean-validation-with-spring-boot/
+9. https://reflectoring.io/consumer-driven-contract-feign-pact/
+9. https://reflectoring.io/spring-boot-elasticsearch/
+9. https://reflectoring.io/spring-data-specifications/
+9. https://reflectoring.io/spring-boot-12-factor-app/
+9. https://reflectoring.io/spring-boot-application-events-explained/  -- optional
+
 

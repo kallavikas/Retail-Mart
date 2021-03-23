@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.http.server.ServletServerHttpResponse;
@@ -25,7 +26,8 @@ public class RetailMartResponseWrapper implements ResponseBodyAdvice<Object> {
 	@Override
 	public boolean supports(MethodParameter returnType, Class<? extends HttpMessageConverter<?>> converterType) {
 		return !httpServletRequest.getRequestURI().contains("swagger")
-				&& !httpServletRequest.getRequestURI().endsWith("/v2/api-docs") ;
+				&& !httpServletRequest.getRequestURI().endsWith("/v2/api-docs")
+				&& !converterType.equals(StringHttpMessageConverter.class);
 	}
 	//https://stackoverflow.com/questions/51828879/springboot-controller-return-data-through-responsebodyadvice-occur-an-error-cl
 

@@ -10,10 +10,12 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 
+import lombok.Builder;
 import lombok.Data;
 
 @Entity
 @Data
+@Builder
 @Table(name="login")
 @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 public class Login {
