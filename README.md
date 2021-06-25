@@ -16,12 +16,12 @@ Retail web Application
 20. add git ignore file
 16. Cors filtering
 14. swagger integration documentation on controller
+12. Add Junit testcases
+13. Integration test cases
 
 #Pending Task
 
 5. Add reading configuration from yml file
-12. Add Junit testcases
-13. Integration test cases
 4. Add Rest Template integration and Feign with custom thread pool
 5. Add Mono and flux integration
 6. Add compleatable future,@async annotation
@@ -31,6 +31,7 @@ Retail web Application
 18. jmeter scripts
 3. Add kafka integration
 8. Implement work flow activi 
+9. Implement fault tolerance
 
 #To be Implemented
 
